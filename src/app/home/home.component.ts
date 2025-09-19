@@ -1,15 +1,11 @@
-import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
-import {
-  NativeScriptCommonModule,
-  NativeScriptRouterModule,
-} from '@nativescript/angular';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'Home',
-  templateUrl: './home.component.html',
-  imports: [NativeScriptCommonModule, NativeScriptRouterModule],
-  schemas: [NO_ERRORS_SCHEMA],
+    selector: 'ns-home',
+    template: `
+        <StackLayout>
+            <Label text="Bienvenido a Home" class="h1" />
+        </StackLayout>
+    `
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}
